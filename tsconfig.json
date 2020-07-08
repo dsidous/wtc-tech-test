@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mono-nx-test-with-nextjs/ui": ["libs/ui/src/index.ts"],
+      "@mono-nx-test-with-nextjs/fe-wtc-tech-test": [
+        "apps/fe-wtc-tech-test/app/index.ts"
+      ],
+      "@mono-nx-test-with-nextjs/api/utils": ["apps/api/src/utils/index.ts"],
+      "@mono-nx-test-with-nextjs/api/assets": ["apps/api/src/assets/list.ts"],
+      "@mono-nx-test-with-nextjs/api/routes": [
+        "apps/api/src/app/routes/index.ts"
+      ],
+      "@mono-nx-test-with-nextjs/api/constants": ["apps/api/src/constants.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

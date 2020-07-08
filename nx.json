@@ -1,0 +1,36 @@
+{
+  "npmScope": "mono-nx-test-with-nextjs",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "fe-wtc-tech-test": {
+      "tags": []
+    },
+    "fe-wtc-tech-test-e2e": {
+      "tags": [],
+      "implicitDependencies": ["fe-wtc-tech-test"]
+    },
+    "api": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
+    }
+  }
+}
