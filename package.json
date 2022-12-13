@@ -38,7 +38,7 @@
     "colors": "1.4.0",
     "cors": "2.8.5",
     "document-register-element": "1.13.1",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "figlet": "1.4.0",
     "helmet": "3.22.0",
     "lodash.upperfirst": "4.3.1",
